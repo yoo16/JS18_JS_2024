@@ -29,3 +29,15 @@ console.log(quantity);
  * 複合演算
  */
 var price = 500;
+
+
+/**
+ * テキスト連結
+ */
+var tableNo = 3;
+var orderNo = 20341;
+var orderCode = ""
+
+// TODO: 「tableNo-orderNo」で文字列で連結
+
+console.log(orderCode);
