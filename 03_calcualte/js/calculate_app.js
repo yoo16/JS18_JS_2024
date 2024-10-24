@@ -7,6 +7,8 @@ var discount = 100;
 var totalPrice = 0;
 
 // TODO: 個数を増減
+quantity++
+
 // TODO: 合計金額計算
 totalPrice = price * quantity - discount
 // TODO: 四捨五入
@@ -25,3 +27,6 @@ var orderNo = 20341;
 
 // TODO: オーダーコード生成（テキスト連結）
 // TODO: オーダーコードHTML表示
+var orderCode = tableNo + "-" + orderNo
+
+document.getElementById('order-code').innerHTML = orderCode;
