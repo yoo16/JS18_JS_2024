@@ -8,6 +8,7 @@ var totalPrice = 0;
 
 // TODO: 個数を増減
 // TODO: 合計金額計算
+totalPrice = price * quantity - discount
 // TODO: 四捨五入
 
 // HTML表示
