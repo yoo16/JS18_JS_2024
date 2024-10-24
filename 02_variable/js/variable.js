@@ -33,6 +33,7 @@ document.getElementById("quantity").innerHTML = quantity
 document.getElementById("discount").innerHTML = discount
 
 // TODO: 定数定義 税率「TAX_RATE」
+const TAX_RATE = 0.1
 
 // TODO: 税率をHTML表示
-document.getElementById("tax-rate").innerHTML 
+document.getElementById("tax-rate").innerHTML = TAX_RATE
