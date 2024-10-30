@@ -78,8 +78,9 @@ function order() {
 function pay() {
     var message = "決済中...";
     // TODO: 金額が不正の場合： 金額エラー
-    // TODO: 所持金が金額以上の場合： 支払い完了
+    // TODO: 所持金が金額以上の場合： 決済完了
     // TODO: 残高不足の場合： 残高不足
+    // if else statement
     showHTML('status', message)
 }
 
@@ -93,8 +94,8 @@ showHTML('quantity', quantity);
 // 合計金額関数実行
 totalPrice = calculateTotalPrice(price, quantity, discount);
 
-// TODO: 会員の場合、割引価格表示関数実行
-showHTML('member-status', "会員");
+// TODO: 会員ステータス表示：isMemberを利用して「一般」「会員」
+showHTML('member-status', "一般");
 
 // 合計金額表示
 showHTML('totalPrice', totalPrice);
