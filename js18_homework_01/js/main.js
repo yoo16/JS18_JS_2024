@@ -9,23 +9,31 @@ document.getElementById('studentName').innerHTML = studentName;
 
 // 問2
 // TODO: ウィンドウタイトルを「課題01」に変更
-document.title = `課題01-${studentNumber}-${studentName}`;
+// document.title = `課題01-${studentNumber}-${studentName}`;
+document.title = "課題01-" + studentNumber + "-" + studentName;
 
-// 問1: 
+// 問3: 
 //TODO: 整数の中から好きな数字を代入
-var memoryNumber = 10001;
+var memoryNumber = 54;
 document.getElementById('memoryNumber').innerHTML = memoryNumber;
 
 // TODO: 計算
 var answerNumber = memoryNumber;
 // 1. その数字に3をかけます。
-answerNumber *= 3;
+// answerNumber *= 3;
+answerNumber = answerNumber * 3;
+
 // 2. 結果に6を足します。
-answerNumber += 6;
+// answerNumber += 6;
+answerNumber = answerNumber + 6;
+
 // 3. その結果を3で割ります。
-answerNumber /= 3;
+// answerNumber /= 3;
+answerNumber = answerNumber / 3;
+
 // 4. 最初に思い浮かべた数字を引いてください。
-answerNumber -= memoryNumber;
+// answerNumber -= memoryNumber;
+answerNumber = answerNumber - memoryNumber;
 
 // TODO: 答えをHTML表示
 document.getElementById('answerNumber').innerHTML = answerNumber;
