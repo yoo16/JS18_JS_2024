@@ -27,3 +27,7 @@ console.log(result)
 /**
  * ユーザ定義関数
  */
+// fun と入力して、Function Statement を選ぶ
+function calcualte(x) {
+    
+}
