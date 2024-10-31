@@ -25,6 +25,8 @@ function showHTML(id, value) {
 function calculateTotalPrice(price, quantity, discount) {
     // 合計金額の計算
     var totalPrice = price * quantity - discount
+    totalPrice *= (1 + TAX_RATE)
+    totalPrice = totalPrice.toFixed()
     // 合計金額を返す
     return totalPrice
 }
