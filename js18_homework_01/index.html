@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+    <div class="container m-auto">
+        <h1 class="text-3xl font-bold m-4 p-6 text-center">JS18-課題01-JS基本01</h1>
+        <div class="bg-white rounded-lg p-8">
+            <h2 class="text-2xl font-bold mb-4 text-center">問題1</h2>
+            <p>
+                JSのプログラムで、自分の氏名と学籍番号と変数定義してHTML表示してください。
+            </p>
+            <div class="mb-4">
+                <label for="studentNumber" class="block text-lg text-gray-700 p-2">学籍番号</label>
+                <label id="studentNumber" class="block text-xl bg-gray-50 p-2 rounded-lg">ここに学籍番号表示</label>
+            </div>
+
+            <div>
+                <label for="studentName" class="block text-lg text-gray-700 p-2">氏名</label>
+                <label id="studentName" class="block text-xl bg-gray-50 p-2 rounded-lg">ここに氏名表示</label>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg p-8">
+            <h2 class="text-2xl font-bold mb-4 text-center">問題2</h2>
+            <p>
+                JSのプログラムで、ウィンドウタイトルを「課題01-学籍番号-氏名」に変更してください。
+            </p>
+        </div>
+
+        <div class="bg-white rounded-lg p-6 mb-4">
+            <h2 class="text-2xl font-bold mb-4 text-center">問題3</h2>
+            <p class="text-lg text-gray-700 p-2">
+                JSのプログラムで、つぎの問題を完成させてください。
+            </p>
+            <div class="">
+                <div>
+                    <p class="text-lg text-gray-700 p-2">
+                        整数の中から好きな数字を思い浮かべます。
+                        <small>※好きな数字は、変数「memoryNumber」で定義</small>
+                    </p>
+                    <!-- ここに思い浮かんだ数字（変数定義した）を JSで表示 -->
+                    <div class="text-center p-3">
+                        <span id="memoryNumber" class="text-3xl">
+                            ここに好きな数字を表示
+                        </span>
+                    </div>
+                </div>
+                <ol class="list-decimal list-inside p-3">
+                    <li class="mb-2">その数字に 3 をかけます。</li>
+                    <li class="mb-2">その結果に 6 を足します。</li>
+                    <li class="mb-2">その結果を 3 で割ります。</li>
+                    <li class="mb-2">最初に思い浮かべた数字を引いてください。</li>
+                </ol>
+            </div>
+            <div class="my-5 text-center">
+                最終結果は必ず
+                <label id="answerNumber" class="block text-red-500 text-3xl text-gray-700 p-2">
+                    ここに答えを表示
+                </label>
+                になるはずです。
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg p-8">
+            <h2 class="text-2xl font-bold mb-4 text-center">問題4</h2>
+            <p class="text-lg text-gray-700 p-2">
+                JSのプログラムで、つぎの問題を完成させてください。
+            </p>
+            <div class="mb-4">
+                <div class="">
+                    <p>
+                        日本人の平均寿命は約84歳です。
+                        現在のあなたの年齢を設定して、あと何日生きられるかを計算するプログラムを作成してください。
+                    </p>
+                    <small>※1年を365日と仮定します。</small>
+                </div>
+
+                <div>
+                    現在の年齢
+                    <label id="currentAge" class="text-2xl text-gray-700 p-2">現在の年齢</label>
+                    歳のあなたは、あと
+                    <label id="remainDays" class="text-red-500 text-2xl text-gray-700 p-2"></label>
+                    日生きられるでしょう。
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
