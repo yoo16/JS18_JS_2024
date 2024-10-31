@@ -40,6 +40,9 @@ const randomNumber = (min, max) => {
 }
 
 // TODO: HTML表示（商品名、価格、個数）
+showHTML("item-name", itemName)
+showHTML("price", price)
+showHTML("quantity", quantity)
 
 // TODO: 合計金額計算
 
