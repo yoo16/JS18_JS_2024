@@ -56,8 +56,9 @@ var totalPrice = calculateTotalPrice(
     quantity,
     discount
 )
-showHTML("totalPrice", totalPrice)
 
 // TODO: HTML表示（割引、合計金額）
+showHTML("discount", discount)
+showHTML("totalPrice", totalPrice)
 
 // TODO: オーダーコード（テーブルNo-オーダーNo）、完了メッセージ処理
