@@ -29,5 +29,8 @@ console.log(result)
  */
 // fun と入力して、Function Statement を選ぶ
 function calcualte(x) {
-    
+    // { } の中で処理をする
+    var y = x + 5
+    // 結果 y を返す
+    return y
 }
