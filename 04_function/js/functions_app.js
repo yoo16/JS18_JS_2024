@@ -16,12 +16,18 @@ function showHTML(id, value) {
     document.getElementById(id).innerHTML = value
 }
 
-
 /**
  * calculateTotalPrice()
  * 合計金額（税込）の計算 
+ * 価格、個数、割引
  */
 // TODO: 関数定義
+function calculateTotalPrice(price, quantity, discount) {
+    // 合計金額の計算
+    var totalPrice = price * quantity - discount
+    // 合計金額を返す
+    return totalPrice
+}
 
 /**
  * createOrderCode()
