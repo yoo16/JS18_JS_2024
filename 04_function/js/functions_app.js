@@ -51,6 +51,12 @@ showHTML("price", price)
 showHTML("quantity", quantity)
 
 // TODO: 合計金額計算
+var totalPrice = calculateTotalPrice(
+    price,
+    quantity,
+    discount
+)
+showHTML("totalPrice", totalPrice)
 
 // TODO: HTML表示（割引、合計金額）
 
