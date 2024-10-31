@@ -34,3 +34,13 @@ function calcualte(x) {
     // 結果 y を返す
     return y
 }
+
+// calculate を実行する
+var answer = calcualte(8)
+console.log(answer)
+
+answer = calcualte(28)
+console.log(answer)
+
+answer = calcualte(-7)
+console.log(answer)
