@@ -23,7 +23,10 @@ var price = 500
 var money = 1000
 
 // if else statement
-if (price <= money) {
+if (price < 0) {
+    // 価格が不正だったら
+    message = "エラー"
+} else if (price <= money) {
     // 価格が所持金以下だったら
     message = "購入完了"
 } else {
