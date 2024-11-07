@@ -51,3 +51,13 @@ switch (weekday) {
         break;
 }
 console.log(gabage)
+
+if (weekday == "月" || weekday == "木") {
+    gabage = "燃えるゴミ";
+} else if (weekday == "金") {
+    gabage = "燃えないゴミ";
+} else {
+    gabage = "回収なし";
+}
+
+console.log(gabage);
