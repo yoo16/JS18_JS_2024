@@ -23,5 +23,12 @@ var price = 500
 var money = 1000
 
 // if else statement
-
+if (price <= money) {
+    // 価格が所持金以下だったら
+    message = "購入完了"
+} else {
+    // そうでなければ
+    message = "残高不足"
+}
+console.log(message)
 
