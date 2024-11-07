@@ -35,3 +35,8 @@ if (price < 0) {
 }
 console.log(message)
 
+// switch statement
+var weekday = "木"
+var gabage = ""
+
+
