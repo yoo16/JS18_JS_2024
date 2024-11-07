@@ -1,12 +1,11 @@
 /**
  * for
- * 0 から1ずつ増やして10回表示
+ * 1 から 1ずつ増やして10回表示
  */
 // TODO: For Loop
-for (let index = 0; index < 10; index++) {
+for (let index = 1; index <= 10; index++) {
     console.log(index)
 }
-
 
 /**
  * for
