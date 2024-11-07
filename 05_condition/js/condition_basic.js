@@ -35,8 +35,19 @@ if (price < 0) {
 }
 console.log(message)
 
-// switch statement
 var weekday = "木"
 var gabage = ""
-
-
+// swと入力して switch statement
+switch (weekday) {
+    case "月":
+    case "木":
+        gabage = "燃えるゴミ"
+        break;
+    case "金":
+        gabage = "燃えないゴミ"
+        break;
+    default:
+        gabage = "回収なし"
+        break;
+}
+console.log(gabage)
