@@ -16,3 +16,12 @@ console.log(result)
 // price が 500 以上か？
 result = (price >= 500)
 console.log(result)
+
+// 変数の定義
+var message = ""
+var price = 500
+var money = 1000
+
+// if else statement
+
+
