@@ -1,18 +1,24 @@
+const daysOfWeek = ["日曜日", "月曜日", "火曜日", "水曜日", "木曜日", "金曜日", "土曜日"];
+
 // 現在の年月日と時刻を表示する関数
 function updateTime() {
     // TODO: 現在の日時の作成
-    var now
+    var now = new Date()
 
     // TODO: 年月日と時刻を取得
-    var year
-    var month
-    var day
-    var hours
-    var minutes
-    var seconds
+    var year = now.getFullYear()
+    var month = now.getMonth() + 1
+    var day = now.getDate()
+    var hours = now.getHours()
+    var minutes = now.getMinutes()
+    var seconds = now.getSeconds()
+
+    // 曜日のインデック（番号）
+    var weekIndex = now.getDay()
+    var weekString = daysOfWeek[weekIndex]
 
     // フォーマット YYYY/MM/DD HH:MM:SS
-    const formattedDateTime = `${year}/${month}/${day} ${hours}:${minutes}:${seconds}`;
+    const formattedDateTime = `${year}/${month}/${day} ${hours}:${minutes}:${seconds} (${weekString})`;
 
     // id=datetime の Element取得
     const datetimeElement = document.getElementById("datetime");
