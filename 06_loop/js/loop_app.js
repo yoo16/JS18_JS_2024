@@ -6,12 +6,16 @@ const defaultYear = 30;
 // TODO: optionタグ生成の繰り返し
 // ageSelect という <select> タグを取得する
 
+// ブラウザの強制再読み込み（キャッシュクリア）
+// Win: Ctrl + Shift + R
+// Mac: Cmd + Shift + R
+
 for (let index = 0; index <= 100; index++) {
     // optionタグ生成​
     const option = document.createElement('option');
     // TODO: 年齢を表示
-    option.value = 0; // index を value に設定
-    option.innerHTML = 0 + ' 歳'; // index + " 歳" を表示
+    option.value = index; // index を value に設定
+    option.innerHTML = index + ' 歳'; // index + " 歳" を表示
 
     // selectタグ に optionタグ追加​
     ageSelect.appendChild(option);
