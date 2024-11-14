@@ -36,6 +36,10 @@ function calculateYears() {
 
     // TODO: 複利計算: 預金額 x (1 + 金利) / 100
     // whileで 目標金額に達するまで年を増やして計算
+    while (currentAmount < savingTarget) {
+        currentAmount *= (1 + interestRate / 100);
+        years++
+    }
 
     // 結果を表示
     document.getElementById('year').innerHTML = years;
