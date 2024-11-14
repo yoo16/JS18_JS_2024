@@ -19,6 +19,7 @@ function updateTime() {
 
     // フォーマット YYYY/MM/DD HH:MM:SS
     const formattedDateTime = `${year}/${month}/${day} ${hours}:${minutes}:${seconds} (${weekString})`;
+    // const formattedDateTime = year + "/" + month + "/" + day + " " + hours + ":" + minutes + ":" + seconds + "(" + weekString + ")";
 
     // id=datetime の Element取得
     const datetimeElement = document.getElementById("datetime");
