@@ -27,5 +27,10 @@ console.log(sum);
 var num = 0;
 // TODO: While Loop
 // num が 10以下だったらずっと繰り返し
-// 偶数（「２」で割った値が「0」）： num % 2 == 0
-console.log(num)
+while (num <= 10) {
+    // 偶数（「２」で割った値が「0」）： num % 2 == 0
+    console.log(num)
+
+    // num を１増やす
+    num++
+}
