@@ -26,9 +26,12 @@ furigana.innerHTML = station.furigana
 // TODO: 駅名、ふりがなのデータ更新
 // name = 有楽町, furigana = ゆうらくちょう
 
+station.name = "有楽町"
+station.furigana = "ゆうらくちょう"
+
 // TODO: 駅名表示
-current.innerHTML
-furigana.innerHTML
+current.innerHTML = station.name
+furigana.innerHTML = station.furigana
 
 // 連想配列の配列
 // name: 東京, furigana: とうきょう
