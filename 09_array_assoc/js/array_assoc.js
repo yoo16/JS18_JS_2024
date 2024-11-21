@@ -3,6 +3,9 @@ const furigana = document.getElementById('current-furigana');
 const next = document.getElementById('next-station');
 const prev = document.getElementById('prev-station');
 
+// ブラウザの強制再読み込み（キャッシュクリア）
+// Win: Ctrl + Shift + R
+// Mac: Cmd + Shift + R
 // 連想配列（オブジェクト）の定義
 // name = 東京, furigana = とうきょう
 var station = {
