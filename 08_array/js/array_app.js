@@ -24,7 +24,7 @@ function showItem() {
     // インデックス範囲内かチェック
     if (index >= 0 && index < items.length) {
         // TODO: items に index を指定してデータ表示
-        document.getElementById('input-value').value;
+        document.getElementById('input-value').value = items[index]
 
         // エラーメッセージ空白
         document.getElementById('error').innerHTML = "";
