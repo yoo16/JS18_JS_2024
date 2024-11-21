@@ -37,7 +37,9 @@ furigana.innerHTML = station.furigana
 // name: 東京, furigana: とうきょう
 // name: 有楽町, furigana: ゆうらくちょう
 // name: 新橋, furigana: しんばし
-const stations = []
+const stations = [
+    { name: "東京", furigana: "とうきょう"},
+]
 
 console.log(stations)
 
