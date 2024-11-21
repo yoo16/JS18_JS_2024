@@ -56,7 +56,7 @@ current.innerHTML = currentStation.name
 furigana.innerHTML = currentStation.furigana
 
 // TODO: 前の駅名表示
-prev.innerHTML
+prev.innerHTML = stations[0].name
 
 // TODO: 次の駅名表示
-next.innerHTML
+next.innerHTML = stations[2].name
