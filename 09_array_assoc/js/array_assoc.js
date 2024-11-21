@@ -5,7 +5,10 @@ const prev = document.getElementById('prev-station');
 
 // 連想配列（オブジェクト）の定義
 // name = 東京, furigana = とうきょう
-var station
+var station = {
+    name: "東京",
+    furigana: "とうきょう",
+}
 // DevTools で確認
 console.log(station)
 
