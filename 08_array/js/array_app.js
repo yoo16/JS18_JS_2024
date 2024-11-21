@@ -48,6 +48,10 @@ function updateItem() {
     console.log(index, value)
 
     // TODO: インデックスを指定して値更新
+    items[index] = value
+
+    // コンソール表示
+    console.log(items)
 
     // 配列の値表示
     showItem();
