@@ -42,17 +42,18 @@ const stations = [
     { name: "有楽町", furigana: "ゆうらくちょう"},
     { name: "新橋", furigana: "しんばし"},
 ]
-
+// コンソール表示
 console.log(stations)
 
-// 現在の駅名表示
+// TODO: 現在の駅名表示
 // index = 1
-var currentStation
+var index = 1
+var currentStation = stations[index]
 console.log(currentStation)
 
 // TODO: 駅名表示
-current.innerHTML
-furigana.innerHTML
+current.innerHTML = currentStation.name
+furigana.innerHTML = currentStation.furigana
 
 // TODO: 前の駅名表示
 prev.innerHTML
