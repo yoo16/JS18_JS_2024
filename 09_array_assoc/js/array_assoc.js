@@ -20,8 +20,8 @@ console.log(station)
 // Mac: Cmd + Shift + R
 
 // TODO:駅名表示
-current.innerHTML
-furigana.innerHTML
+current.innerHTML = station.name
+furigana.innerHTML = station.furigana
 
 // TODO: 駅名、ふりがなのデータ更新
 // name = 有楽町, furigana = ゆうらくちょう
