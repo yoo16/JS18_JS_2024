@@ -122,6 +122,10 @@ function onStationClick(id) {
     updateStation();
 }
 
+// 再読み込みしても出ない時
+// ブラウザの強制再読み込み
+// Win: Ctrl + Shift + R
+// Mac: Cmd + Shift + R
 /**
  * displayStations()
  * 駅の一覧表示
