@@ -7,6 +7,7 @@ console.log(titleElement)
 console.log(messageElement)
 
 // TODO: titleElement に文字「DICE」を表示
+titleElement.innerText = "DICE"
 
 // TODO: titleElement の idを取得し、コンソール表示
 
