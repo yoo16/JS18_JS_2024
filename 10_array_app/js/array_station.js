@@ -151,10 +151,7 @@ function displayStations() {
 
         stationMap.appendChild(stationElement);
         // ---- ここまで ---
-
     }
-
-
 }
 
 // ページ読み込み時に初期化
