@@ -128,6 +128,10 @@ function onStationClick(id) {
  */
 function displayStations() {
     // TODO: 駅名ボタン表示の繰り返し(for of)
+    for (const station of stations) {
+        console.log(station.id, station.name)
+    }
+
     // ---- ここから ---
         // const stationElement = document.createElement('div');
         // stationElement.className = `
@@ -139,7 +143,7 @@ function displayStations() {
         // stationElement.textContent = station.name;
         // // クリックしたとき
         // stationElement.onclick = () => onStationClick(station.id);
-        // 
+        
         // stationMap.appendChild(stationElement);
     // ---- ここまで ---
     
