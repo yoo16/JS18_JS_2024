@@ -52,12 +52,12 @@ var prevStationIndex = getPrevStationIndex();
 function updateStation() {
     // 現在の駅
     // TODO: 配列「stations」から、現在のインデックス「currentStationIndex」で、駅（連想配列）を取得
-    var station
+    var station = stations[currentStationIndex]
 
     // TODO: 駅名表示
-    currentName.innerHTML
+    currentName.innerHTML = station.name
     // TODO: 駅名（ふりがな）表示
-    currentFurigana.innerHTML
+    currentFurigana.innerHTML = station.furigana
 
     // 次の駅のインデックス
     nextStationIndex = getNextStationIndex();
