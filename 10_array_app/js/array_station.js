@@ -126,6 +126,9 @@ function onStationClick(id) {
 // ブラウザの強制再読み込み
 // Win: Ctrl + Shift + R
 // Mac: Cmd + Shift + R
+// インデント
+// Win: Shift + Alt + F
+// Mac: Shift + Option + F
 /**
  * displayStations()
  * 駅の一覧表示
@@ -134,23 +137,24 @@ function displayStations() {
     // TODO: 駅名ボタン表示の繰り返し(for of)
     for (const station of stations) {
         console.log(station.id, station.name)
+        // ---- ここから ---
+        const stationElement = document.createElement('div');
+        stationElement.className = `
+            station text-sm w-full h-[40px] rounded-full 
+            bg-green-500 text-white flex items-center justify-center 
+            m-1 cursor-pointer
+        `;
+        // 駅名
+        stationElement.textContent = station.name;
+        // クリックしたとき
+        stationElement.onclick = () => onStationClick(station.id);
+
+        stationMap.appendChild(stationElement);
+        // ---- ここまで ---
+
     }
 
-    // ---- ここから ---
-        // const stationElement = document.createElement('div');
-        // stationElement.className = `
-        //     station text-sm w-full h-[40px] rounded-full 
-        //     bg-green-500 text-white flex items-center justify-center 
-        //     m-1 cursor-pointer
-        // `;
-        // // 駅名
-        // stationElement.textContent = station.name;
-        // // クリックしたとき
-        // stationElement.onclick = () => onStationClick(station.id);
-        
-        // stationMap.appendChild(stationElement);
-    // ---- ここまで ---
-    
+
 }
 
 // ページ読み込み時に初期化
