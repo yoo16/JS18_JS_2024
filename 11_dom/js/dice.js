@@ -1,7 +1,7 @@
 // TODO: id=title, id=message, id=result の Element取得
-var titleElement
-var messageElement
-var resultElement
+var titleElement = document.getElementById('title')
+var messageElement = document.getElementById('message')
+var resultElement = document.getElementById('result')
 
 console.log(titleElement)
 console.log(messageElement)
