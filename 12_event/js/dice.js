@@ -29,6 +29,7 @@ const updateDiceImage = (number) => {
  * サイコロを振る関数
  */
 // TODO: HTML id="rollButton" に onclickイベントで登録
+// function rolldice() {}
 const rollDice = () => {
     console.log("Click!");
 
