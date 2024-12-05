@@ -37,17 +37,18 @@ const randomNumber = (min, max) => {
  * rollDice()
  * サイコロを振る関数
  */
-const rollDice = () => {
+// const rollDice = () => {
+function rollDice() {
     // 1 - 6 のランダムな数字取得
     var number = randomNumber(1, 6)
 
     // TODO: resultElement に number を表示
-    resultElement.innerHTML
+    resultElement.innerHTML = number
 
     // TODO: messageElement に HTMLを表示
     // <p class="text-green-800">サイコロをふりました！</p>
-    messageElement.innerHTML
-
+    messageElement.innerHTML = '<p class="text-green-800">サイコロをふりました！</p>'
+ 
     // TODO: data-number に number を設定
     resultElement.dataset.number
 }
