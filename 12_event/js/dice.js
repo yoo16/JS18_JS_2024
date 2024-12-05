@@ -22,6 +22,7 @@ const updateDiceImage = (number) => {
     // imgタグ
     var resultElement = document.getElementById("result");
     // TODO: サイコロ画像の更新
+    resultElement.src = "images/dice" + number + ".png"
 };
 
 /**
