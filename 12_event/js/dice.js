@@ -33,6 +33,11 @@ const updateDiceImage = (number) => {
 const rollDice = () => {
     console.log("Click!");
 
+    // TODO: 1 - 6 のランダムな数字を取得
+    var number = randomNumber(1, 6)
+    // TODO: updateDiceImage() に number を渡して実行
+    updateDiceImage(number)
+
     // 0.05秒間隔で画像を切り替える
     var timer = setInterval(() => {
         // TODO: 1 - 6 のランダムな数字を取得
