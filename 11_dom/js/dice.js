@@ -10,8 +10,10 @@ console.log(messageElement)
 titleElement.innerText = "DICE"
 
 // TODO: titleElement の idを取得し、コンソール表示
+console.log(titleElement.id)
 
 // TODO: titleElement の classを取得し、コンソール表示
+console.log(titleElement.className)
 
 // TODO: titleElement に class設定
 // text-red-500 text-4xl font-bold mb-4
