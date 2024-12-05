@@ -34,7 +34,6 @@ const updateDiceImage = (number) => {
 const rollDice = () => {
     console.log("Click!");
 
-
     // 0.05秒間隔で画像を切り替える
     var timer = setInterval(() => {
         // TODO: 1 - 6 のランダムな数字を取得
@@ -47,13 +46,14 @@ const rollDice = () => {
     // img タグを取得
     var resultElement = document.getElementById("result");
     // class = rolling を追加
-    // resultElement.classList.add('rolling')
+    resultElement.classList.add('rolling')
 
     // TODO: setTImeout で２秒後にサイコロを止める
     setTimeout(() => {
         // タイマー停止
         clearInterval(timer)
         // TODO: アニメーション終了 class = rolling を削除
+        resultElement.classList.remove('rolling')
 
         // メッセージ更新
         messageElement.innerHTML = "サイコロをふりました！";
