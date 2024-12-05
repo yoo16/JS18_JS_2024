@@ -27,7 +27,8 @@ messageElement.innerHTML = '<p>サイコロを振りました</p>';
  * randomNumber()
  * ランダムな整数
  */
-const randomNumber = (min, max) => {
+// const randomNumber = (min, max) => {
+function randomNumber(min, max) {
     //(0 - 1 のランダム) * (max + 1 - min) + min
     var number = Math.floor(Math.random() * (max + 1 - min)) + min
     return number
@@ -50,7 +51,7 @@ function rollDice() {
     messageElement.innerHTML = '<p class="text-green-800">サイコロをふりました！</p>'
  
     // TODO: data-number に number を設定
-    resultElement.dataset.number
+    resultElement.dataset.number = number
 }
 
 // サイコロの実行
