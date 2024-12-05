@@ -19,6 +19,10 @@ console.log(titleElement.className)
 // text-red-500 text-4xl font-bold mb-4
 titleElement.className = "text-red-500 text-4xl font-bold mb-4"
 
+// メッセージを表示
+// messageElement.innerText = '<p>サイコロを振りました</p>';
+messageElement.innerHTML = '<p>サイコロを振りました</p>';
+
 /**
  * randomNumber()
  * ランダムな整数
