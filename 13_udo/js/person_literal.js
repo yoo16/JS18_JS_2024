@@ -7,6 +7,8 @@ const person = {
     }
 };
 
+person.age = 31
+
 // TODO: オブジェクトリテラルで処理
 // name
 document.getElementById('person-name').innerHTML
