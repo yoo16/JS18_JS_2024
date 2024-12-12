@@ -21,6 +21,8 @@ function clickEvent(element, event) {
     // Element取得
     console.log(element);
 
+    console.log(this)
+
     // TODO: Elementからクラス名表示
     document.getElementById('this-object').innerText;
 

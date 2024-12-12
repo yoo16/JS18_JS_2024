@@ -9,7 +9,7 @@ const person = {
 
 // TODO: オブジェクトリテラルで処理
 // name
-document.getElementById('person-name').innerHTML;
+document.getElementById('person-name').innerHTML = person.name;
 
 // age
 document.getElementById('person-age').innerHTML;
