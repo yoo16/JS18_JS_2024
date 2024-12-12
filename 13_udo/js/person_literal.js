@@ -12,7 +12,7 @@ const person = {
 document.getElementById('person-name').innerHTML = person.name;
 
 // age
-document.getElementById('person-age').innerHTML;
+document.getElementById('person-age').innerHTML = person.age;
 
 // greet()
 document.getElementById('person-greet').innerHTML;
