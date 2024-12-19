@@ -67,8 +67,8 @@ function switchBackground() {
     // 背景画像のインデックス更新
     imageIndex = (imageIndex + 1) % images.length;
 
-    // TODO: Imageオブジェクト作成 
-    var image;
+    // TODO: Imageオブジェクト作成(imgタグ作成) 
+    var image = document.createElement('img')
 
     // TODO: Imageオブジェクトに配列 images の画像パス設定: image.src
 
