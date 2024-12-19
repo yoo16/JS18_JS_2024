@@ -31,7 +31,7 @@ function animationText(text) {
         // TODO: spanタグ作成 createElement()
         var span = document.createElement('span')
         // TODO: spanに、text の index番目の文字を設定
-        span.innerText = message
+        span.innerText = text[index]
         // TODO: class=fade-in を設定: classList.add()
         // TODO: copyElement に spanタグを追加: appendChild()
         copyElement.appendChild(span)
