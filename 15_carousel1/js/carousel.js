@@ -30,6 +30,9 @@ function createCarousel() {
     const scrollItems = items
 
     // TODO: scrollItems を forEach() で繰り返し、 createCarouselItem() でカルーセル画像追加
+    scrollItems.forEach(item => {
+        console.log(item)
+    });
 }
 
 /**
