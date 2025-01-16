@@ -20,14 +20,15 @@ function createCarousel() {
     items.forEach(item => {
         // --- 繰り返し（ここから）---
         // TODO: imgタグ作成
-
+        const img = document.createElement('img')
         // TODO: 画像パス設定: item.image
-
+        img.src = item.image
         // TODO: class=carousel-image 追加
-
+        img.classList.add('carousel-image')
         // TODO: クリックでモーダルウィンドウ開く
 
-        // TODO: 親要素に imgタグ追加
+        // TODO: 親要素 carouselImages にimgタグ追加
+        carouselImages.appendChild(img)
         // --- 繰り返し（ここまで）---
     });
 }
