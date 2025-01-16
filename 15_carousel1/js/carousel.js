@@ -21,6 +21,9 @@ function createCarouselItem(item) {
     carouselImages.appendChild(img);
 }
 
+// 強制再読み込み
+// Win: Ctrl + Shift + R
+// Mac: Cmd + Shift + R
 /**
  * createCarousel()
  * カルーセルリスト作成
@@ -32,6 +35,7 @@ function createCarousel() {
     // TODO: scrollItems を forEach() で繰り返し、 createCarouselItem() でカルーセル画像追加
     scrollItems.forEach(item => {
         console.log(item)
+        createCarouselItem(item)
     });
 }
 
