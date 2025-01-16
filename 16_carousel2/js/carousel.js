@@ -39,8 +39,10 @@ function createCarousel() {
  */
 function updateCarousel() {
     // TODO: オフセット計算(%): インデックス x 100
+    const offset = -currentIndex * 100;
 
     // TODO: 左にずらす（%): style.transform に translateX() 設定
+    carouselImages.style.transform = `translateX(${offset}%)`;
 
     // TODO: アニメーションイージング: style.transition に　transform 設定
     carouselImages.style.transition = "transform 1.0s ease";
