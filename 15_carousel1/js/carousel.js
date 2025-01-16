@@ -34,7 +34,7 @@ function createCarousel() {
 
     // TODO: scrollItems を forEach() で繰り返し、 createCarouselItem() でカルーセル画像追加
     scrollItems.forEach(item => {
-        console.log(item)
+        // console.log(item)
         createCarouselItem(item)
     });
 }
@@ -47,7 +47,7 @@ function scrollCarousel() {
     // スクロール量の計算(px)
     scrollX -= scrollSpeed;
     // TODO: スクロールを左方向に進める: style.transform に translateX(数字px) 設定
-    carouselImages.style.transform
+    carouselImages.style.transform = 'translateX(' + scrollX + 'px)'
 
     // カルーセルの幅を取得
     const totalWidth = carouselImages.scrollWidth;
@@ -55,6 +55,7 @@ function scrollCarousel() {
     // TODO: スクロールが一定距離（カルーセルの幅半分）を超えたらリセット
 
     // TODO: アニメーションを継続
+    requestAnimationFrame(scrollCarousel)
 }
 
 // ページ読み込み完了後に実行
