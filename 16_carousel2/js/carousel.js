@@ -26,10 +26,12 @@ function createCarousel() {
         // TODO: class=carousel-image 追加
         img.classList.add('carousel-image')
         // TODO: クリックでモーダルウィンドウ開く
-        img.addEventListener('click', function() {
+        // img.addEventListener('click', function() {
+        //     openModal(item.id)
+        // })
+        img.addEventListener('click', () => {
             openModal(item.id)
         })
-
         // TODO: 親要素 carouselImages にimgタグ追加
         carouselImages.appendChild(img)
         // --- 繰り返し（ここまで）---
@@ -85,6 +87,7 @@ function createThumbnails() {
         // サムネイル画像作成
         const thumb = document.createElement("img");
         thumb.src = item.image;
+        // class=thumbnail-image
         thumb.classList.add("thumbnail-image");
         // サムネイルクリックで、カルーセル移動
         thumb.onclick = () => {
@@ -124,14 +127,16 @@ function prev() {
  */
 function updateThumbnails() {
     // TODO: class=thumbnail-image をすべて取得
-    const thumbnails = [];
+    const thumbnails = document.querySelectorAll('.thumbnail-image');
 
     // サムネイル繰り返し
     thumbnails.forEach((thumb, index) => {
         if (index === currentIndex) {
             // TODO: 現在のインデックスで、class=active-thumbnail 追加: add()
+            thumb.classList.add('active-thumbnail')
         } else {
             // TODO: それ以外のインデックスで、class=active-thumbnail 削除: remove()
+            thumb.classList.remove('active-thumbnail')
         }
     });
 }
