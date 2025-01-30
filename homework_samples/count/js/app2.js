@@ -18,4 +18,5 @@ function decrement() {
 
 // イベント登録 addEventListner
 // Increseボタンをクリックしたら
-document.getElementById('increment-btn').addEventListener('click')
+document.getElementById('increment-btn').addEventListener('click', increment)
+document.getElementById('decrement-btn').addEventListener('click', decrement)
