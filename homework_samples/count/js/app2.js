@@ -15,3 +15,7 @@ function decrement() {
     // counter.innerHTML = count;
     counter.innerText = count;
 }
+
+// イベント登録 addEventListner
+// Increseボタンをクリックしたら
+document.getElementById('increment-btn').addEventListener('click')
