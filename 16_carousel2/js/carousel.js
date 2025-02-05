@@ -128,6 +128,7 @@ function prev() {
 function updateThumbnails() {
     // TODO: class=thumbnail-image をすべて取得
     const thumbnails = document.querySelectorAll('.thumbnail-image');
+    // const thumbnails = document.getElementsByClassName('thumnail-image');
 
     // サムネイル繰り返し
     thumbnails.forEach((thumb, index) => {
