@@ -1,3 +1,5 @@
+// Mac: Cmd + Shift + R
+// Win: Ctrl + Shift + R
 function addNumberAppend() {
     const message = document.createElement("p");
     message.innerText = Math.floor(Math.random() * 100);
@@ -7,6 +9,7 @@ function addNumberAppend() {
     info.textContent = "More text"
 
     // TODO: id=message-list の後に追加: append()
+    document.getElementById('message-list').append(message, info)
 }
 
 function addNumberAfter() {
