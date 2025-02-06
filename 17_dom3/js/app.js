@@ -20,6 +20,7 @@ function addNumberAfter() {
     const info = document.createElement("span");
     info.textContent = "More text"
     // TODO: id=start の後に追加: after()
+    document.getElementById('start').after(newNumber, info)
 }
 
 function addNumber() {
