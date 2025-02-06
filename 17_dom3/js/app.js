@@ -70,7 +70,8 @@ function addItem() {
 
 function removeItems() {
     // TODO: class=selected の要素をすべて取得: querySelectorAll()
-    var selectedItems;
+    var selectedItems = document.querySelectorAll('.selected');
+    console.log(selectedItems)
 
     // 要素がなければ終了
     if (!selectedItems) return;
@@ -78,5 +79,6 @@ function removeItems() {
     // 子要素があれば、すべて削除
     selectedItems.forEach(selectedItem => {
         // TODO: DOMの削除
+        selectedItem.remove();
     });
 }
