@@ -30,6 +30,7 @@ function addNumber() {
     newItem.className = "p-2 bg-gray-200 rounded-md mb-2";
 
     // TODO: numberListに appendChild()
+    numberList.appendChild(newItem)
 }
 
 function removeNumber() {
@@ -37,6 +38,7 @@ function removeNumber() {
     // 最後の要素があれば
     if (numberList.lastChild) {
         // TODO: 最後の要素を削除
+        numberList.removeChild(numberList.lastChild)
     }
 }
 
