@@ -55,6 +55,7 @@ function onLoadedMetadata() {
  */
 function onChangeVolume(event) {
     volume = event.target.value;
+    console.log(volume)
     changeVolume(volume)
 }
 
