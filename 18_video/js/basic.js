@@ -6,13 +6,18 @@ var volume = 0;
 // ビデオファイル
 const videoFile = "videos/video1.mp4";
 
+// 強制再読み込み
+// Mac: Cmd + Shift + R
+// Win: Ctrl + Shift + R
 /**
  * loadVideo()
  * ビデオ読み込み
  */
 function loadVideo(filePath) {
     // TODO: 新しい動画設定で読み込み​
-    // TODO: 再生位置リセットで読み込み​
+    video.src = filePath;
+    // TODO: 動画の読み込み
+    video.load();
 }
 
 /**
