@@ -28,11 +28,11 @@ function drawTriangle() {
     ctx.beginPath();
     // 三角形を描画
     // TODO: 座標移動: x, y = 50, 0
-    ctx.moveTo(0, 0);
+    ctx.moveTo(50, 0);
     // TODO: 線を引く: x, y = 150, 0
-    ctx.lineTo(0, 0);
+    ctx.lineTo(150, 0);
     // TODO: 線を引く: x, y = 100, 100
-    ctx.lineTo(0, 0);
+    ctx.lineTo(100, 100);
     // パス終了
     ctx.closePath();
     // 線を描画
@@ -48,7 +48,7 @@ function drawCircle() {
     ctx.beginPath();
     // TODO: 円を描画
     // arc(x, y, radius, startAngle, endAngle)
-    ctx.arc(0, 0, 0, 0, Math.PI * 2);
+    ctx.arc(200, 200, 100, 0, Math.PI * 2);
     ctx.closePath();
     ctx.fill();
     ctx.stroke();
