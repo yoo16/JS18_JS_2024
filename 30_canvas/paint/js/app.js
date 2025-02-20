@@ -7,6 +7,7 @@ const downloadButton = document.getElementById('downloadButton');
 
 // canvas 要素と描画コンテキストの取得
 const canvas = document.getElementById('drawCanvas');
+// コンテキストを取得
 const ctx = canvas.getContext('2d');
 
 // 描画状態を管理する変数
@@ -74,7 +75,7 @@ canvas.addEventListener('touchstart', (e) => {
 // マウス移動
 canvas.addEventListener('mousemove', (e) => {
     // TODO: getBoundingClientRect() を使ってマウスの座標を取得
-    const rect = {};
+    const rect = canvas.getBoundingClientRect();
     draw(e.clientX - rect.left, e.clientY - rect.top);
 });
 
@@ -98,13 +99,13 @@ canvas.addEventListener('touchcancel', endDrawing);
 // コントロール変更時のイベントリスナー
 colorPicker.addEventListener('change', (e) => {
     // TODO: 色変更処理: currentColor に target.value 設定
-    currentColor = '';
+    currentColor = e.target.value;
 });
 
 // 太さ入力
 lineWidthRange.addEventListener('input', (e) => {
     // TODO: 色変更処理: currentLineWidth に target.value 設定
-    currentLineWidth = 0;
+    currentLineWidth = e.target.value;
     lineWidthValue.textContent = currentLineWidth;
 });
 
