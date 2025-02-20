@@ -1,7 +1,7 @@
 // Canvas 要素を取得し、2D コンテキストを取得
 const canvas = document.getElementById('myCanvas');
 // TODO: 2D コンテキスト
-const ctx = {};
+const ctx = canvas.getContext('2d');
 
 /**
  * drawSquare()
@@ -12,9 +12,11 @@ function drawSquare() {
 
     // TODO: 矩形を塗り  
     // x, y, width, height = 200, 0, 50, 50
+    ctx.fillRect(200, 0, 50, 80);
 
     // TODO: 矩形をストローク 
     // x, y, width, height = 200, 0, 100, 100
+    ctx.strokeRect(200, 0, 100, 100);
 }
 
 
