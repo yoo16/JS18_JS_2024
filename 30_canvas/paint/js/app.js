@@ -112,12 +112,13 @@ lineWidthRange.addEventListener('input', (e) => {
 // リセットボタンクリック
 resetButton.addEventListener('click', () => {
     // TODO: キャンバス全体をクリア: clearRect()
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 });
 
 // ダウンロードボタンクリック
 downloadButton.addEventListener('click', () => {
     // TODO: Canvas の内容を PNG のデータURL に変換: toDataURL()
-    const dataURL = '';
+    const dataURL = canvas.toDataURL('image/png');
 
     // 一時的なリンク（aタグ）を生成してクリックし、ダウンロードを実行
     const a = document.createElement('a');
