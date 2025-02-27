@@ -228,9 +228,9 @@ function updatemesh() {
 
     // 鼻のY座標の中間点を計算
     // TODO: 鼻の左: landmark[279]
-    const leftNose = 0;
+    const leftNose = landmark[279];
     // TODO: 鼻の右: landmark[49]
-    const rightNose = 0;
+    const rightNose = landmark[49];
     const noseYMidpoint = (leftNose.y + rightNose.y) / 2;
 
     // 鼻のY座標の中間点に位置を調整

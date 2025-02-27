@@ -52,8 +52,8 @@ async function setupCamera() {
     // videoEl.srcObject にメディアストリーム設定
     videoEl.srcObject = await navigator.mediaDevices.getUserMedia(config);
 
-    // TODO: videoEl でビデオ再生
-    videoEl.play();
+    // TODO: videoEl でビデオ再生（非同期）
+    await videoEl.play();
 }
 
 /**
@@ -64,7 +64,7 @@ async function setupCamera() {
 async function detectFace() {
     const estimationConfig = { flipHorizontal: false };
     // TODO: 顔検知処理(非同期処理): detector.estimateFaces()
-    const faces = {};
+    const faces = await detector.estimateFaces(videoEl, estimationConfig);
     // console.log(faces);
     return faces;
 }
