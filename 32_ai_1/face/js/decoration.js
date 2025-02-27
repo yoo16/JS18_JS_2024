@@ -253,11 +253,11 @@ function calculateNormalVector() {
     // ランドマーク取得
     const landmark = fixLandmarkValue(results[0].keypoints);
     // TODO: 鼻の先端のキーポイント: 1
-    const noseTip = landmark[0];
+    const noseTip = landmark[1];
     // TODO: 鼻の左端のキーポイント: 279
-    const leftNose = landmark[0];
+    const leftNose = landmark[279];
     // TODO: 鼻の右端のキーポイント: 49
-    const rightNose = landmark[0];
+    const rightNose = landmark[49];
 
     // 鼻の中央を計算（x, y, z）
     const midpoint = {
