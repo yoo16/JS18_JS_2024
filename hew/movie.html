@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>映画</title>
+    <script defer src="movie.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-400 font-sans" style="background-image: url('images/ironman.jpg'); background-size: cover; background-position: center;">
+       <header class="p-4 bg-gray-100 text-gray-900 text-center" style="background-image: url('images/sweets_fortune_cookie_open.png'); background-size: cover; background-position: center;">
+              <h1 class="text-3xl">
+                  <a href="quotes.html" class="text-yellow-500 hover:hover:opacity-75 hover:scale-110 hover:text-yellow-900 transition-all duration-500">世界の名言集</a>
+              </h1>
+              <p class="text-xl">あなたに一番必要な一言</p>
+       </header>
+     
+       <nav class="p-4 bg-blue-200 text-white flex justify-around" style="background-image: url('images/akari.jpg'); background-size: cover; background-position: center;">
+              <a href="anime.html" class="text-lg font-bold opacity-100 hover:opacity-75 hover:scale-110 hover:text-red-500 transition-all duration-500" style="font-family: 'Playfair Display', serif;">アニメ</a> 
+              <a href="comic.html" class="text-lg font-bold opacity-100 hover:opacity-75 hover:scale-110 hover:text-purple-500 transition-all duration-500" style="font-family: 'Playfair Display', serif;">漫画</a>
+              <a href="movie.html" class="text-lg font-bold opacity-100 hover:opacity-75 hover:scale-110 hover:text-yellow-500 transition-all duration-500" style="font-family: 'Playfair Display', serif;">映画</a>
+              <a href="realperson.html" class="text-lg font-bold opacity-100 hover:opacity-75 hover:scale-110 hover:text-green-500 transition-all duration-500" style="font-family: 'Playfair Display', serif;">実存人物</a>
+       </nav>
+    
+       <h1 id="title" class="text-red-500 text-4xl font-bold mb-4">DICE</h1>
+       <div id="message" class="mb-4">映画の名セリフ</div>
+              <div class="flex flex-col items-center space-y-4">
+              <div class="result-box flex items-center justify-center bg-white border-4 border-gray-800 
+              text-3xl font-bold text-gray-800 w-400 h-40 rounded-lg shadow-lg">
+              </div>
+              <div class="result-box flex items-center justify-center bg-white border-4 border-gray-800 
+              text-3xl font-bold text-gray-800 w-400 h-40 rounded-lg shadow-lg">
+              </div>
+              <div class="result-box flex items-center justify-center bg-white border-4 border-gray-800 
+              text-3xl font-bold text-gray-800 w-400 h-40 rounded-lg shadow-lg"></div>
+              </div>  
+
+       <div class="flex justify-center mt-4">
+              <button id="rollButton" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-700">やり直し</button>
+       </div>
+</body>
+</html>
